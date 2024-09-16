@@ -34,3 +34,12 @@ Console.WriteLine(nomePessoa + " é do sexo" + caractereUnico + " (Feminino)");
 
 
 #endregion
+
+#region casting
+double a;
+int b;
+
+a = 5.0;
+b = (int) a; 
+Console.WriteLine(b);
+#endregion
