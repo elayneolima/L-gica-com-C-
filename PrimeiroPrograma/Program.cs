@@ -43,3 +43,30 @@ a = 5.0;
 b = (int) a; 
 Console.WriteLine(b);
 #endregion
+
+#region entrada de dados
+
+string frase = Console.ReadLine();
+Console.WriteLine(frase);
+
+string x = Console.ReadLine();
+Console.WriteLine(x);
+
+string y = Console.ReadLine();
+Console.WriteLine(y);
+
+string z = Console.ReadLine();
+Console .WriteLine(z);
+
+//armazena entrada em uma variável vetor, podendo guardar o valor da mesma em outras variáveis usando o split. 
+string[] vet = Console.ReadLine().Split(' '); 
+Console.WriteLine("você digitou: " + vet);
+
+string v1 = vet[0];
+string v2 = vet[1];
+string v3 = vet[2];
+
+Console.WriteLine(v1);
+Console.WriteLine(v2);
+Console.WriteLine(v3);
+#endregion
