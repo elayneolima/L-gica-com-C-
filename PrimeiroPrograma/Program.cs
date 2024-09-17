@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-#region escrevendo dados no console com e sem quebre de linha
+#region escrevendo dados no console com e sem quebra de linha
 using System.Globalization;
 
-Console.WriteLine("Isso é ua string");
+Console.WriteLine("Isso é uma string");
 Console.Write("Isso é uma string sem quebra de linha");
 Console.Write("Isso é uma demo de do texto anterior");
 Console.WriteLine();
@@ -17,7 +17,7 @@ int numeroInteiro = 10;
 string nomePessoa = "Lana";
 char caractereUnico = 'F';
 
-// ToString converte o valor da variável em sting, quando o metodo WriteLine precisa lidar com formatação
+// ToString converte o valor da variável em string, quando o metodo WriteLine precisa lidar com formatação
 
 // O metodo cultureInfo é passado no ToString justamente por se tratar de formatação
 Console.WriteLine(numeroDecimal);
@@ -69,4 +69,33 @@ string v3 = vet[2];
 Console.WriteLine(v1);
 Console.WriteLine(v2);
 Console.WriteLine(v3);
+#endregion
+
+#region entrada de dados pt. 2
+
+
+int n1 = int.Parse(Console.ReadLine());
+Console.WriteLine(n1);
+
+char sexo = char.Parse (Console.ReadLine());
+Console.WriteLine(sexo);
+
+//caso deseje que exiba o valor com ponto no lugar de virgula, passar o CultreInfo no Console.WriteLine(variavel.ToString(Culture...)); 
+double flutuante = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Console.WriteLine(flutuante);
+
+string[] vet1 = Console.ReadLine().Split(' ');
+
+string p1 = (vet1[0]);
+Console.WriteLine(p1);
+
+char p2 = char.Parse(vet1[1]);
+Console.WriteLine(p2);
+
+int p3 = int.Parse(vet1[2]);
+Console.WriteLine(p3);
+
+double p4 = double.Parse(vet1[3], CultureInfo.InvariantCulture);
+Console.WriteLine(p4.ToString(CultureInfo.InvariantCulture));
+
 #endregion
