@@ -2,6 +2,7 @@
 
 #region escrevendo dados no console com e sem quebra de linha
 using System.Globalization;
+using System.Numerics;
 
 Console.WriteLine("Isso é uma string");
 Console.Write("Isso é uma string sem quebra de linha");
@@ -97,5 +98,24 @@ Console.WriteLine(p3);
 
 double p4 = double.Parse(vet1[3], CultureInfo.InvariantCulture);
 Console.WriteLine(p4.ToString(CultureInfo.InvariantCulture));
+
+#endregion
+
+#region funcoes matematicas
+
+double x1 = 3.0;
+double y2 = 4.0;
+double z3 = -5.0;
+
+
+double num1, num2, num3; 
+
+num1 = Math.Sqrt(x1);
+num2 = Math.Sqrt(y2);
+num3 = Math.Sqrt(z3);
+
+Console.WriteLine("A raiz quadrada de " + x1 + "é igual a: " + num1);
+Console.WriteLine("A raiz quadada de " + y2  + "é igual a: " + num2);
+Console.WriteLine("A raiz quadrada de" + z3 + "é igual a " + num3);
 
 #endregion
