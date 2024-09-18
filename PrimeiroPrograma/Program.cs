@@ -101,21 +101,42 @@ Console.WriteLine(p4.ToString(CultureInfo.InvariantCulture));
 
 #endregion
 
-#region funcoes matematicas
+#region funcoes matematicas basicas
 
+//Raiz quadrada de w, x e y. 
 double x1 = 3.0;
 double y2 = 4.0;
 double z3 = -5.0;
 
 
-double num1, num2, num3; 
+double num1, num2, num3, num4; 
 
 num1 = Math.Sqrt(x1);
 num2 = Math.Sqrt(y2);
-num3 = Math.Sqrt(z3);
+num3 = Math.Sqrt(25.5);
+num4 = -5.0; 
 
-Console.WriteLine("A raiz quadrada de " + x1 + "é igual a: " + num1);
-Console.WriteLine("A raiz quadada de " + y2  + "é igual a: " + num2);
-Console.WriteLine("A raiz quadrada de" + z3 + "é igual a " + num3);
+Console.WriteLine("A raiz quadrada de " + x1 + "é igual a: " + num1.ToString("f3"));
+Console.WriteLine("A raiz quadada de " + y2  + "é igual a: " + num2.ToString("f3"));
+Console.WriteLine("A raiz quadrada de 25.0 é igual a: " + num3.ToString("f3"));
+
+// Potencia de w, x e y
+
+
+num1 = Math.Pow(x1, x1);
+num2 = Math.Pow(y2, x1);
+num3 = Math.Pow(num3, x1);
+
+Console.WriteLine("O numero " + x1 + "elevado a" + x1 + "é igual a: " + num1.ToString("f2"));
+Console.WriteLine("O numero " + y2 + "elevado a" + x1 + "é igual a: " + num2.ToString("f2"));
+
+// Valor absoluto de um numero
+
+num1 = Math.Abs(x1);
+num4 = Math.Abs(num4);
+
+Console.WriteLine("O valor absoluto de" + x1 + "é igual a: " + num1);
+Console.WriteLine("O valor absoluto de" + num4 + "é igual a:" + num4); 
+
 
 #endregion
