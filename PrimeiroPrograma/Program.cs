@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 #region escrevendo dados no console com e sem quebra de linha
+using System.ComponentModel.Design;
 using System.Globalization;
 using System.Numerics;
 
@@ -136,7 +137,66 @@ num1 = Math.Abs(x1);
 num4 = Math.Abs(num4);
 
 Console.WriteLine("O valor absoluto de" + x1 + "é igual a: " + num1);
-Console.WriteLine("O valor absoluto de" + num4 + "é igual a:" + num4); 
+Console.WriteLine("O valor absoluto de" + num4 + "é igual a:" + num4);
+
+
+#endregion
+
+#region estruturas condicionais
+
+
+//Estrutura condicional simples
+
+int number = 5;
+
+Console.WriteLine("Bom dia!");
+
+if (number < 0)
+{
+    Console.WriteLine("Boa noite!"); 
+}
+
+Console.WriteLine("Boa tarde!");
+
+// Estrutura condicional composta
+
+int horas;
+
+Console.WriteLine("Digite as horas!");
+horas = int.Parse(Console.ReadLine());
+
+if (horas < 12)
+{
+    Console.WriteLine("Bom dia!");
+}
+else
+{
+    Console.WriteLine("Boa tarde!");
+}
+
+
+// Encadeamento de estrutura condicional
+
+int horasEntrada;
+
+Console.WriteLine("Digite a hora");
+horasEntrada = int.Parse(Console.ReadLine());
+
+if (horasEntrada <= 12)
+{
+    Console.WriteLine("Bom dia!");
+}
+
+else if (horasEntrada <= 18)
+{
+    Console.WriteLine("Boa tarde!"); 
+}
+else
+{
+    Console.WriteLine("Boa noite!");   
+}
+
+
 
 
 #endregion
